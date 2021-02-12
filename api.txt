@@ -1,0 +1,17 @@
+login api
+-------------------------------------------------
+curl -X POST http://localhost:8000/api/login \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "mobile":"7984653617"
+}'
+
+
+verify api
+----------------------------------------------
+curl -X POST http://localhost:8000/api/verify \
+    -H 'Content-Type: application/json' \
+    -d '{
+    "otp":"3771",
+    "_id":"602687dd3e668d36c973a5c5"
+}'
